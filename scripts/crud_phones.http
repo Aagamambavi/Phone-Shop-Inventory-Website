@@ -1,0 +1,42 @@
+-- Aagam Ambavi
+-- 10/17/2025
+-- IT-202, Section 003
+-- Phase 2 Assignment
+-- ama346@njit.edu
+
+### 
+POST http://localhost:3000/add_phone.test.php
+Content-Type: application/x-www-form-urlencoded
+
+phoneID=3015
+&phoneCode=SEZ520a
+&phoneName=Sony Ericsson Z520a
+&phoneDescription=The Sony Ericsson Z520a came out in 2005. It has 16MB of internal storage.    
+&OS=Sony Ericsson proprietary OS
+&storageCapacity=16MB
+&phoneTypeID=200
+&phoneWholesalePrice=89.00
+&phoneListPrice=149.00
+
+### 
+GET http://localhost:3000/list_phones.test.php
+
+### 
+POST http://localhost:3000/change_phone.test.php
+Content-Type: application/x-www-form-urlencoded
+
+phoneID=3000
+&phoneCode=Fold7
+&phoneName=Samsung Z Fold 7
+&phoneDescription=The Samsung Z Fold 7 is the latest Z Fold 7 phone with all of the latest features with 512GB of storage. It also has the ability to fold the screen. 
+&OS=Android
+&storageCapacity=512GB
+&phoneTypeID=100
+&phoneWholesalePrice=1500.00
+&phoneListPrice=2119.00
+
+### 
+POST http://localhost:3000/remove_phone.test.php
+Content-Type: application/x-www-form-urlencoded
+
+phoneID=3006

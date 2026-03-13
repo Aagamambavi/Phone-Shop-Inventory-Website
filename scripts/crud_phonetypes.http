@@ -1,0 +1,32 @@
+-- Aagam Ambavi
+-- 10/17/2025
+-- IT-202, Section 003
+-- Phase 2 Assignment
+-- ama346@njit.edu
+
+### 
+POST http://localhost:3000/add_phonetype.test.php
+Content-Type: application/x-www-form-urlencoded
+
+phoneTypeID=400
+&phoneTypeCode=Burner
+&phoneTypeName=Burner Phone
+&releaseYear=2025
+
+### 
+GET http://localhost:3000/list_phonetypes.test.php
+
+### 
+POST http://localhost:3000/change_phonetype.test.php
+Content-Type: application/x-www-form-urlencoded
+
+phoneTypeID=400
+&phoneTypeCode=Work
+&phoneTypeName=Work Phone
+&releaseYear=2025
+
+### 
+POST http://localhost:3000/remove_phonetype.test.php
+Content-Type: application/x-www-form-urlencoded
+
+phoneTypeID=400
